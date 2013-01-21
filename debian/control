@@ -1,0 +1,8 @@
+Package: hsn2-pcap-analyze
+Version: {VER}
+Section: unknown
+Priority: optional
+Architecture: all
+Depends: tshark
+Maintainer: Paweł Borkowski (pawel.borkowski@nask.pl)
+Description: HSN2 PCAP analyzer - analyzes network traffic
