@@ -1,0 +1,3 @@
+pcap-analyze.conf /etc/hsn2/
+pcap-analyze-whitelist.conf /etc/hsn2/pcap-analyze/
+init.lua /etc/wireshark/

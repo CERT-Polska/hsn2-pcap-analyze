@@ -1,6 +1,6 @@
-#!/usr/bin/python -tt
+#!/usr/bin/python
 
-# Copyright (c) NASK
+# Copyright (c) NASK, NCSC
 # 
 # This file is part of HoneySpider Network 2.0.
 # 
@@ -17,16 +17,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-'''
-Created on 10-07-2012
 
-@author: pawelb
-'''
+from setuptools import setup
+from setuptools import find_packages
 
-import subprocess
-
-class External:
-	def runExternal(self, args):
-		proc = subprocess.Popen(args, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-		output = proc.communicate()
-		return output
+setup(
+    name='hsn2_pcap_analyze',
+    version='2.0',
+    description='HSN2 PCAP analyzer - analyzes network traffic',
+    author='CERT Polska',
+    author_email='info@cert.pl',
+    packages=find_packages(),
+    url='http://www.honeyspider.net/',
+    license='GPL-3',
+    install_requires=open('requirements.txt').read().splitlines(),
+)
