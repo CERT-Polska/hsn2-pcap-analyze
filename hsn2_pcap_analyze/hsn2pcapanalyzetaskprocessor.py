@@ -17,16 +17,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys
-sys.path.append("/opt/hsn2/python/commlib")
-from hsn2taskprocessor import HSN2TaskProcessor
-from hsn2taskprocessor import ParamException
-from config import Config
-from hsn2osadapter import ObjectStoreException
-import hsn2objectwrapper as ow
-from external import External
 import logging
 import re
+
+from hsn2_commons import hsn2objectwrapper as ow
+from hsn2_commons.hsn2osadapter import ObjectStoreException
+from hsn2_commons.hsn2taskprocessor import HSN2TaskProcessor
+from hsn2_commons.hsn2taskprocessor import ParamException
+from hsn2_pcap_analyze.config import Config
+from hsn2_pcap_analyze.external import External
 
 
 class PcapAnalyzeTaskProcessor(HSN2TaskProcessor):

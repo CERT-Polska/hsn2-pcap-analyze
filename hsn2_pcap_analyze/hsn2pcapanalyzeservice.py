@@ -17,11 +17,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys
-sys.path.append("/opt/hsn2/python/commlib")
-from hsn2service import HSN2Service
-from hsn2pcapanalyzetaskprocessor import PcapAnalyzeTaskProcessor
-from hsn2service import startService
+from hsn2_commons.hsn2service import HSN2Service
+from hsn2_pcap_analyze.hsn2pcapanalyzetaskprocessor import PcapAnalyzeTaskProcessor
+from hsn2_commons.hsn2service import startService
 
 
 class PcapAnalyzeService(HSN2Service):
