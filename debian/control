@@ -8,6 +8,6 @@ X-Python-Version: >= 2.6
 
 Package: python-hsn2-pcap-analyze
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-hsn2-commons, tshark
+Depends: ${misc:Depends}, ${python:Depends}, python-hsn2-commons, tshark, hsn2-commons-debian
 Provides: ${python:Provides}
 Description: HSN2 PCAP analyzer - analyzes network traffic
