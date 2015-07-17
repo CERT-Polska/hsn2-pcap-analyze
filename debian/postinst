@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+. /lib/hsn2/conf-functions
+
+if [ ! -f /etc/wireshark/init.lua ]; then
+	cp /etc/hsn2/wireshark/init.lua /etc/wireshark/init.lua
+fi
+
+#DEBHELPER#
